@@ -23,11 +23,16 @@ The program counter contains the address of the next instruction to be executed.
 Program memory holds the program that is read into the interpreter. It is an array of bytes.
 
 ## Instructions
-### cmpe: 132, or 10000100
-Compare the top two elements on the runtime stack and make the new top of the runtime
-stack 1 if the elements are equal, and 0 otherwise.
-rstack[sp-1] = rstack[sp-1] == rstack[sp]
-sp--;
+### Comparison Bytecodes
+#### cmpe: 132, or 10000100
+Compare the top two elements on the runtime stack and make the new top of the runtime stack 1 if the elements are equal, and 0 otherwise.
+
+#### cmplt: 136, or 10001000
+Compare the top two elements on the runtime stack and make the new top of the runtime stack 1 if the next to the top element is less than the top element, and 0 otherwise.
+
+#### cmpgt: 140, or 10001100
+Compare the top two elements on the runtime stack and make the new top of the runtime stack 1 if the next to the top element is greater than the top element, and 0 otherwise.
+
 
 
 ## Testing
