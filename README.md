@@ -1,4 +1,5 @@
-# ECE 30862 Project: Interpreter
+# Project: Interpreter
+ECE 30862: Object Oriented Programming C++ and Java
 
 ## Description
 In this project, the bytecode interpreter will read a bytecode file produced by the compiler, and execute it. The program consists of bytecodes and data that follows certain bytecodes. The first byte of the program contains the initial bytecode in the main routine. In general, execution proceeds by executing the byte code pointed to by the PC, updating the PC based on the instruction executing, and continuing until the program executes. The halt instruction will terminate the execution of the program.
